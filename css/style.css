@@ -1,0 +1,148 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+  background: url('../img/bg.png') no-repeat center center/cover;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: #d32f2f;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header ul li a:hover {
+  color: #ffd6d6;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.hero input {
+  width: 80%;
+  max-width: 500px;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px #ff4d4d;
+}
+
+/* Delivery Info Section */
+.delivery-info {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.delivery-info h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffcccc;
+}
+
+.delivery-info p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.feature-box img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.feature-box h3 {
+  color: #ffaaaa;
+  margin-bottom: 10px;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+  background-color: #b71c1c;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  color: #fff;
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
